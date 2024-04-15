@@ -1,0 +1,18 @@
+include: package:austerity/analysis_options.yaml
+
+#Changing the severity of rules
+#https://dart-lang.github.io/linter/lints/options/options.html
+analyzer:
+  language:
+    strict-inference: true
+    strict-raw-types: true
+    strict-casts: true
+  exclude:
+    - "**/*.g.dart"
+    - "bin/cache/**"
+  errors:
+    avoid_classes_with_only_static_members: ignore
+    diagnostic_describe_all_properties: ignore
+    prefer_expression_function_bodies: ignore
+    prefer_int_literals: warning
+    unused_field: warning

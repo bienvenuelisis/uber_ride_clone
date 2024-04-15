@@ -1,0 +1,7 @@
+# TODO : Add more strict analysis options and document/rewrite code according to it.
+analyzer:
+  strong-mode:
+    #implicit-casts: true
+    #implicit-dynamic: true
+  errors:
+    close_sinks: ignore
